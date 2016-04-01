@@ -15,6 +15,7 @@ int main(int argc, char * argv[]) {
 		if (!strcmp(option, "list")) testList();
 		else if (!strcmp(option, "array")) testArray();
 		else if (!strcmp(option, "queue")) testQueue();
+		else if (!strcmp(option, "sort")) testSort();
 
 
 		printf("please input the test option:\n");
