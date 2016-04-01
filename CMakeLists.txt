@@ -4,11 +4,15 @@ CMAKE_MINIMUM_REQUIRED(VERSION 3.0)
 ADD_SUBDIRECTORY(./list)
 ADD_SUBDIRECTORY(./array)
 ADD_SUBDIRECTORY(./queue)
+ADD_SUBDIRECTORY(./stack)
+ADD_SUBDIRECTORY(./tree)
+ADD_SUBDIRECTORY(./search)
+ADD_SUBDIRECTORY(./sort)
 
 FILE(GLOB SRC *.cpp)
 FILE(GLOB INC *.h *.hpp)
 ADD_EXECUTABLE(testDS ${SRC} ${INC})
-TARGET_LINK_LIBRARIES(testDS list array queue)
+TARGET_LINK_LIBRARIES(testDS list array queue stack tree search sort)
 
 
 
