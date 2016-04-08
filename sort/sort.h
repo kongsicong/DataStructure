@@ -14,5 +14,6 @@ namespace sort {
 	}array;
 
 	void InsertSortWithArray(array &a);
+	void BinarySortWithArray(array &a);
 }
 #endif //_SORT_H_
