@@ -6,6 +6,7 @@ using namespace sort;
 void testSort();
 
 void testInsertSortWithArray();
+void testBinarySortWithArray();
 
 void createArray(array &a);
 void printArray(array &a);

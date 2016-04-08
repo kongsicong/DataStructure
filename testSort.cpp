@@ -6,6 +6,7 @@ void testSort() {
 		printf("please input your choice:\n");
 		printf("0 exit\n");
 		printf("1 test InsertSortWithArray\n");
+		printf("2 test BinarySortWithArray\n");
 		scanf_s("%d", &choice);
 
 		switch (choice) {
@@ -13,6 +14,9 @@ void testSort() {
 			break;
 		case 1:
 			testInsertSortWithArray();
+			break;
+		case 2:
+			testBinarySortWithArray();
 			break;
 		default:
 			break;
@@ -26,7 +30,16 @@ void testInsertSortWithArray() {
 	printArray(a);
 
 	InsertSortWithArray(a);
-	printf("after sort:\n");
+	printf("after insert sort:\n");
+	printArray(a);
+}
+void testBinarySortWithArray() {
+	array a;
+	createArray(a);
+	printArray(a);
+
+	BinarySortWithArray(a);
+	printf("after binary sort:\n");
 	printArray(a);
 }
 
