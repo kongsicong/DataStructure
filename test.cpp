@@ -16,6 +16,11 @@ int main(int argc, char * argv[]) {
 		else if (!strcmp(option, "array")) testArray();
 		else if (!strcmp(option, "queue")) testQueue();
 		else if (!strcmp(option, "sort")) testSort();
+		else if (!strcmp(option, "stack")) testStack();
+		else if (!strcmp(option, "queue")) testQueue();
+		else if (!strcmp(option, "string")) testString();
+		else if (!strcmp(option, "tree")) testTree();
+		else if (!strcmp(option, "graph")) testGraph();
 
 
 		printf("please input the test option:\n");

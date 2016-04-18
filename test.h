@@ -4,4 +4,9 @@
 #include "testList.h"
 #include "testQueue.h"
 #include "testSort.h"
+#include "testStack.h"
+#include "testQueue.h"
+#include "testString.h"
+#include "testTree.h"
+#include "testGraph.h"
 #endif //_TEST_H_
