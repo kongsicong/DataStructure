@@ -8,11 +8,13 @@ ADD_SUBDIRECTORY(./stack)
 ADD_SUBDIRECTORY(./tree)
 ADD_SUBDIRECTORY(./search)
 ADD_SUBDIRECTORY(./sort)
+ADD_SUBDIRECTORY(./string)
+ADD_SUBDIRECTORY(./graph)
 
 FILE(GLOB SRC *.cpp)
 FILE(GLOB INC *.h *.hpp)
 ADD_EXECUTABLE(testDS ${SRC} ${INC})
-TARGET_LINK_LIBRARIES(testDS list array queue stack tree search sort)
+TARGET_LINK_LIBRARIES(testDS list array queue stack tree search sort string graph)
 
 
 
