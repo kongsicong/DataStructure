@@ -7,7 +7,14 @@ void testSort();
 
 void testInsertSortWithArray();
 void testBinarySortWithArray();
+void testShellSortWithArray();
+void testBubbleSortWithArray();
+void testQuickSortWithArray();
+void testSelectSortWithArray();
+void testHeapSortWithArray();
 
 void createArray(array &a);
 void printArray(array &a);
+void createArray(HeapType &H);
+void printArray(HeapType &H);
 #endif //_TEST_SORT_H_
