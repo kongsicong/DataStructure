@@ -49,11 +49,12 @@ namespace stack {
 		if (S.top - S.base >= S.stackSize) {
 			S.base = (ElemType*)realloc(S.base, (STACKINCREMENT + S.stackSize) * sizeof(ElemType));
 			if (!S.base) return OVERFLOW;
+			S.stackSize = S.stackSize + STACKINCREMENT;
 		}
 
-		S.top++;
 		*(S.top) = e;
-		S.stackSize = S.stackSize + STACKINCREMENT;
+		S.top++;
+		
 		return OK;
 	}
 }

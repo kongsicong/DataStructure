@@ -26,6 +26,7 @@ namespace stack {
 
 	Status InitStack(SqStack &S);
 	Status DestroyStack(SqStack &S);
+	Status ClearStack(SqStack &S);
 	Status StackEmpty(SqStack &S);
 	int StackLength(SqStack &S);
 	Status GetTop(SqStack S, ElemType &e);
