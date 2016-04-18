@@ -6,7 +6,11 @@
 #include "stack/stack.h"
 using namespace stack;
 void testStack();
-
-
+void testBasicStack();
+void conversion();
+void parenthesisMatch();
+void lineEdit();
+void CreateStack(SqStack &S);
+void PrintStack(SqStack S);
 
 #endif //_TEST_STACK_H_
